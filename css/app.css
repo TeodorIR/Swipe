@@ -171,7 +171,7 @@ p {
 }
 
 .secondary-button:hover {
-    opacity: 0.75s;
+    opacity: 0.75;
     cursor: pointer;
 }
 
