@@ -517,5 +517,12 @@ p {
     max-width: 844px;
     opacity: 25%;
     position: absolute;
-    top: 7%;
+    top: 10%;
+}
+
+/* VIRTUAL EVENTS SECTION */
+
+.virtual-events-section {
+    display: flex;
+    justify-content: center;
 }
