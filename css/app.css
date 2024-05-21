@@ -44,12 +44,17 @@ body {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    padding: var(--spacing-sm);
+    padding: 0;
     background-color: var(--bg-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main {
+    width: 100%;
+    margin: var(--spacing-xl) 0;
 }
 
 h1 {
@@ -284,10 +289,6 @@ p {
 
 /*HERO STYLES*/
 
-main {
-    margin: var(--spacing-xl) 0;
-}
-
 .button-container {
     display: flex;
     margin: var(--spacing-md) 0;
@@ -296,6 +297,12 @@ main {
 .button-container button:nth-of-type(2) {
     margin: 0 0 0 var(--spacing-md);
     color: var(--purple-2);
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero p {
@@ -313,6 +320,12 @@ main {
 }
 
 /*PARTNERS*/
+
+.partners-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .partners-grid {
     display: grid;
@@ -332,6 +345,9 @@ main {
 
 .unified-platform-section {
     padding: var(--spacing-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .unified-platform-section h2 {
@@ -349,6 +365,12 @@ main {
 }
 
 /* GRAPHIC GRID SECTION */
+
+.graphic-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .graphic-grid {
     display: grid;
@@ -390,6 +412,9 @@ main {
 .integration-section {
     color: var(--text-light);
     background-color: var(--primary-accent);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .integration-section .primary-button {
@@ -428,6 +453,12 @@ main {
 
 /* WHY SWIPE SECTION */
 
+.why-swipe-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .why-swipe-section .card-container {
     display: flex;
     margin: var(--spacing-lg) 0;
@@ -442,4 +473,49 @@ main {
 
 .why-swipe-section .secondary-text {
     color: var(--text-dark);
+}
+
+/* GLOBAL SECTION */
+
+.global-section {
+    background-color: var(--primary-accent);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-light);
+    position: relative;
+    padding: calc(var(--spacing-xl) * 3) 0 calc(var(--spacing-xl) * 2) 0;
+}
+
+.global-section a {
+    color: var(--blue-1);
+}
+
+.global-section a:hover {
+    color: var(--text-light);
+}
+
+.global-section .card-container {
+    display: flex;
+    margin: calc(var(--spacing-xl) * 2 ) 0;
+}
+
+.global-section .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.global-section .card-container .card h3 {
+    border-left: 2px solid var(--blue-1);
+    padding: 0 0 0 var(--spacing-sm);
+    line-height: 28px;
+}
+
+#globe {
+    max-width: 844px;
+    opacity: 25%;
+    position: absolute;
+    top: 7%;
 }
