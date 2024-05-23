@@ -267,6 +267,7 @@ p {
     width: 100%;
     max-width: var(--standard-width);
     padding: 0 var(--spacing-md);
+    margin: 0 0 var(--spacing-xl) 0;
 }
 
 .menu {
@@ -292,6 +293,22 @@ p {
 
 .navbar-button:hover {
     background: rgba(250,250,250, 0.5);
+}
+
+/* ANIMATED GRADIENT */
+
+#gradient-canvas {
+    width: 200%;
+    height: 970px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -600px;
+    left: -50%;
+    z-index: -1;
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
 }
 
 /*HERO STYLES*/
@@ -355,6 +372,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--bg-light);
 }
 
 .unified-platform-section h2 {
@@ -377,6 +395,11 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--bg-white);
+}
+
+.graphic-section img {
+    background-color: #f1f3f5;
 }
 
 .graphic-grid {
@@ -500,13 +523,24 @@ p {
 /* GLOBAL SECTION */
 
 .global-section {
-    background-color: var(--primary-accent);
     width: 100%;
     display: flex;
     justify-content: center;
     color: var(--text-light);
     position: relative;
-    padding: calc(var(--spacing-xl) * 3) 0 calc(var(--spacing-xl) * 2) 0;
+    padding: calc(var(--spacing-xl) * 3) 0 0 0;
+}
+
+.global-section::before {
+    content: "";
+    width: 100%;
+    height: 1100px;
+    background-color: var(--primary-accent);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    transform: skewY(-10deg);
+    z-index: -2;
 }
 
 .global-section a {
@@ -548,6 +582,20 @@ p {
     display: flex;
     justify-content: center;
     padding: calc(var(--spacing-xl) * 2) 0;
+    position: relative;
+}
+
+.virtual-events-section::before {
+    content: "";
+    background-color: var(--bg-white);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.virtual-events-section .section-container {
+    padding: calc(var(--spacing-xl) * 2) 0 0 0;
 }
 
 .virtual-events-section .primary-button {
