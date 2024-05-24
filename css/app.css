@@ -772,3 +772,270 @@ p {
     font-size: var(--h6-size);
     font-weight: 700;
 }
+
+@media only screen and (max-width: 1144px) {
+    .section-container {
+        padding: 0 var(--spacing-md);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --h1-size: 80px;
+        --h1-height: 85px;
+    }
+
+    .hero-phone {
+        height: 500px;
+        transform: translate(32px, -64px);
+    }
+
+    .hero .col-left {
+        width: 60%;
+    }
+    
+    .hero .col-right {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .partners-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .integration-section .col-left {
+        width: 60%;
+    }
+
+    .integration-section .col-right {
+        width: 40%;
+    }
+}
+
+/* TABLET SIZE */
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --h1-size: 64px;
+        --h1-height: 72px;
+        --h3-size: 34px;
+        --h6-size: 16px;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        margin: 0;
+    }
+
+    /* HERO STYLES */
+    #gradient-canvas {
+        height: 820px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    /* HERO STYLES */
+
+    .hero .two-column {
+        align-items: center;
+    }
+
+    .hero .col-left {
+        width: 60%;
+    }
+
+    .hero .col-right {
+        width: 40%;
+    }
+
+    .hero-phone {
+        height: 450px;
+        transform: translateX(32px);
+    }
+
+    /* UNIFIED PLATFORM */
+
+    .unified-platform-section h2 {
+        width: 100%;
+    }
+
+    /* INTEGRATION SECTION */
+
+    .integration-section .card-container {
+        flex-direction: column;
+    }
+
+    .integration-section .card-container .card {
+        width: 100%;
+    }
+
+    /* WHY SWIPE */
+
+    .why-swipe-section .card-container {
+        flex-wrap: wrap;
+    }
+
+    .why-swipe-section .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    /* GLOBAL SCALE SECTION */
+
+    .global-section .card-container {
+        flex-wrap: wrap;
+        margin: var(--spacing-xl) 0;
+    }
+
+    .global-section .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+}
+
+/* MOBILE SIZE */
+
+@media only screen and (max-width: 646px) {
+    :root {
+        --h1-size: 55px;
+        --h1-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .two-column {
+        flex-direction: column;
+    }
+
+    .two-column .col-left {
+        width: 100%;
+    }
+
+    .two-column .col-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        margin: 0 0 var(--spacing-lg) 0;
+    }
+
+    /* HERO STYLES */
+    #gradient-canvas {
+        height: 820px;
+    }
+
+    main {
+        margin: var(--spacing-lg) 0 0 0;
+    }
+
+    .hero .two-column .hero-phone-container {
+        display: none;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* INTEGRATION SECTION */
+
+    .integration-section .col-right {
+        display: none;
+    }
+
+    /* WHY SWIPE */
+
+    .why-swipe-section .card-container .card {
+        width: 100%;
+        margin: var(--spacing-sm) 0;
+    }
+
+    .why-swipe-section .card-container .card .icon {
+        height: 45px;
+    }
+
+    /* GLOBAL SECTION */
+
+    .global-section .card-container .card {
+        width: 100%;
+        margin: var(--spacing-sm) 0;
+    }
+
+    #globe {
+        opacity: 10%;
+    }
+
+    /* VIRTUAL EVENTS SECTION */
+
+    .virtual-events-section {
+        margin-left: 3%;
+    }
+
+    .virtual-events-section .swipe-session-card {
+        width: 97%;
+    }
+
+    .virtual-events-section .swipe-session-card .secondary-text{
+        width: 100%;
+    }
+
+    .virtual-events-section .swipe-session-card .card-top {
+        height: 40%;
+    }
+
+    .virtual-events-section .swipe-session-card {
+        height: 340px;
+    }
+
+    #sessions-logo {
+        width: 300px;
+    }
+
+    /* GETTING STARTED SECTION */
+
+    .getting-started-section .col-right {
+        margin-top: var(--spacing-xl);
+    }
+
+    .getting-started-section .col-right .card {
+        margin-right: 0;
+    }
+
+    .getting-started-section .col-left {
+        padding: 0;
+    }
+
+    .footer .section-container {
+        flex-wrap: wrap;
+    }
+
+    .footer .col {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    .footer .col a {
+        font-size: 13px;
+    }
+
+    #footer-logo {
+        width: 70px;
+    }
+
+    .footer .icon-link img {
+        width: 18px;
+    }
+}
+
+html, body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
