@@ -422,28 +422,24 @@ p {
     grid-area: card;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
-    border-radius: 20px;
 }
 
 #slack-invoice {
     grid-area: slack;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
-    border-radius: 20px;
 }
 
 #phone {
     grid-area: phone;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
-    border-radius: 20px;
 }
 
 #dash {
     grid-area: dash;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
-    border-radius: 20px;
 }
 
 /* INTEGRATIONS SECTION STYLES */
