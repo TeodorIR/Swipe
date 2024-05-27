@@ -647,6 +647,7 @@ p {
     top: -40%;
     transform: skewY(-5deg);
     z-index: 1;
+    overflow: hidden;
 }
 
 #sessions-logo {
