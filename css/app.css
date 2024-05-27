@@ -303,12 +303,12 @@ p {
 /* ANIMATED GRADIENT */
 
 #gradient-canvas {
-    width: 200%;
-    height: 970px;
-    transform: rotate(-10deg);
+    width: 100%;
+    height: 800px;
     position: absolute;
-    top: -600px;
-    left: -50%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 60%);
     z-index: -1;
     --gradient-color-1: #ef008f;
     --gradient-color-2: #6ec3f4;
@@ -642,8 +642,9 @@ p {
     background: var(--primary-gradient);
     content: "";
     width: 100%;
-    height: 100%;
+    height: 150%;
     position: absolute;
+    top: -40%;
     transform: skewY(-5deg);
     z-index: 1;
 }
@@ -830,6 +831,10 @@ p {
         --h1-height: 72px;
         --h3-size: 34px;
         --h6-size: 16px;
+    }
+
+    #gradient-canvas {
+        clip-path: polygon(0 0, 100% 0, 100% 27%, 0 43%);
     }
 
     /* NAVBAR STYLES */
@@ -1120,5 +1125,4 @@ html, body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
