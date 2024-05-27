@@ -422,24 +422,28 @@ p {
     grid-area: card;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #slack-invoice {
     grid-area: slack;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #phone {
     grid-area: phone;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #dash {
     grid-area: dash;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 /* INTEGRATIONS SECTION STYLES */
@@ -977,13 +981,31 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* UNIFIED PLATFORM SECTION */
+
+    .unified-platform-section {
+        padding: var(--spacing-md) 0;
+    }
+
     /* INTEGRATION SECTION */
+
+    .integration-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .integration-section::before {
+        height: 880px;
+    }
 
     .integration-section .col-right {
         display: none;
     }
 
     /* WHY SWIPE */
+
+    .why-swipe-section {
+        padding: var(--spacing-lg) 0 0 0;
+    }
 
     .why-swipe-section .card-container .card {
         width: 100%;
@@ -995,6 +1017,10 @@ p {
     }
 
     /* GLOBAL SECTION */
+
+    .global-section {
+        padding: calc(var(--spacing-xl) * 2) 0 0 0;
+    }
 
     .global-section .card-container .card {
         width: 100%;
@@ -1008,11 +1034,21 @@ p {
     /* VIRTUAL EVENTS SECTION */
 
     .virtual-events-section {
-        margin-left: 3%;
+        padding: 0;
+    }
+
+    .virtual-events-section .section-container {
+        padding: 0;
+    }
+
+    .virtual-events-section .section-container .col-left {
+        padding: 0 16px 0 16px;
+        box-sizing: border-box;
     }
 
     .virtual-events-section .swipe-session-card {
-        width: 97%;
+        width: 100%;
+        border-radius: 0;
     }
 
     .virtual-events-section .swipe-session-card .secondary-text{
@@ -1032,6 +1068,10 @@ p {
     }
 
     /* GETTING STARTED SECTION */
+
+    .getting-started-section {
+        padding: var(--spacing-lg) 0;
+    }
 
     .getting-started-section .col-right {
         margin-top: var(--spacing-xl);
@@ -1064,6 +1104,16 @@ p {
 
     .footer .icon-link img {
         width: 18px;
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    .getting-started-section .col-right .card h3{
+        max-width: 100px;
+    }
+
+    .getting-started-section .col-right .card .secondary-text{
+        max-width: 150px;
     }
 }
 
