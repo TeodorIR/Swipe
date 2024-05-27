@@ -1038,7 +1038,7 @@ p {
     /* VIRTUAL EVENTS SECTION */
 
     .virtual-events-section {
-        padding: 0;
+        padding: 0 var(--spacing-sm);
     }
 
     .virtual-events-section .section-container {
@@ -1052,7 +1052,7 @@ p {
 
     .virtual-events-section .swipe-session-card {
         width: 100%;
-        border-radius: 0;
+        border-radius: 20px;
     }
 
     .virtual-events-section .swipe-session-card .secondary-text{
