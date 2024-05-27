@@ -642,7 +642,7 @@ p {
     background: var(--primary-gradient);
     content: "";
     width: 100%;
-    height: 150%;
+    height: 100%;
     position: absolute;
     top: -40%;
     transform: skewY(-5deg);
