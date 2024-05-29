@@ -834,9 +834,35 @@ p {
     }
 
     /* NAVBAR STYLES */
+    .scale {
+        transform: scale(1);
+    }
 
     .navbar .menu {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        transform: scale(0);
+        height: 50vh;
+        width: 50%;
+        z-index: 3;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        border-radius: 20px;
+        box-shadow: var(--standard-box-shadow);
+        transition: all 0.25s ease;
+    }
+
+    .navbar .menu.scaled {
+        transform: scale(1);
+      }      
+
+    .navbar .menu a {
+        color: var(--purple-1);
     }
 
     .navbar .navbar-button {
@@ -846,20 +872,38 @@ p {
     .hamburger-button {
         width: 50px;
         height: 30px;
-        background-color: rgba(250, 250, 250, 0.25);
+        background-color: rgba(250, 250, 250, 0.9);
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        cursor: pointer;
     }
 
     .hamburger-button .bar {
         width: 16px;
         height: 2px;
-        background-color: var(--bg-white);
+        background-color: var(--purple-1);
         margin: 2px 0;
+        transition: all 0.3s ease-in-out, opacity 0.3s ease;
     }
+
+    .hamburger-button.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      
+      .hamburger-button.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger-button.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
 
     /* NAVBAR */
 
@@ -1108,8 +1152,11 @@ p {
 }
 
 @media only screen and (max-width: 438px) {
-    .getting-started-section .col-right .card h3{
-        max-width: 100px;
+    .navbar .menu {
+        top: 25%;
+        left: 20.5%;
+        height: 50vh;
+        width: 60%;
     }
 
     .getting-started-section .col-right .card .secondary-text{
