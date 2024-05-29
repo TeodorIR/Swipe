@@ -1125,7 +1125,6 @@ html, body {
 
 /* SCROLL ANIMATIONS */
 
-/* hero */
 .left-load {
     position: relative;
     transform: translateX(-150px);
@@ -1150,7 +1149,6 @@ html, body {
     opacity: 1;
 }
 
-/* unified platform */
 .slide-right {
     position: relative;
     transform: translateX(-150px);

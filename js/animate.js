@@ -48,7 +48,7 @@ function slideright(){
 
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+        var revealpoint = 100;
 
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('slide-right-active');
@@ -67,7 +67,7 @@ function fadein(){
 
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+        var revealpoint = 100;
 
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('fade-in-active');
