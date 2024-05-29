@@ -977,6 +977,10 @@ p {
         width: 50%;
         margin: var(--spacing-md) 0;
     }
+
+    .virtual-events-section .col-left {
+        padding-left: var(--spacing-sm);
+    }
 }
 
 /* MOBILE SIZE */
