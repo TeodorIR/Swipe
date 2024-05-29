@@ -1,5 +1,4 @@
 /*HERO SECTION */
-
 window.addEventListener('load', leftload);
 function leftload(){
     var reveals = document.querySelectorAll('.left-load');
@@ -38,8 +37,7 @@ function rightload(){
     }
 }
 
-/* UNIFIED PLATFORM */
-
+/* THE REST OF THE BODY */
 window.addEventListener('scroll', slideright);
 function slideright(){
     var reveals = document.querySelectorAll('.slide-right');
