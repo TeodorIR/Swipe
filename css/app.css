@@ -1122,3 +1122,100 @@ html, body {
     position: relative;
     overflow-x: hidden;
 }
+
+/* SCROLL ANIMATIONS */
+
+/* hero */
+.left-load {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+.left-load.left-load-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.right-load {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+.right-load.right-load-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* unified platform */
+.slide-right {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+.slide-right.slide-right-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.fade-in {
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.fade-in.fade-in-active {
+    opacity: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+  
+  .navbar .hamburger {
+    display: none;
+  }
+
+  .navbar .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .mobileNav {
+    width: 80px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -160px;
+    padding: 16px;
+    transition: transform 0.4s;
+  }
+
+  .mobileNav img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .openDrawer {
+    transform: translateX(-160px);
+  }
+
+  .mobileNav a {
+    text-decoration: none;
+    color: black;
+    margin: 16px 0;
+  }
