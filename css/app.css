@@ -864,7 +864,7 @@ p {
     /* NAVBAR */
 
     .navbar {
-        margin: 0;
+        margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
     }
 
     /* HERO STYLES */
@@ -1172,50 +1172,3 @@ html, body {
 .fade-in.fade-in-active {
     opacity: 1;
 }
-
-.bar1, .bar2, .bar3 {
-    background-color: black;
-    height: 4px;
-    width: 36px;
-    margin: 3px;
-    border-radius: 10px;
-  }
-  
-  .navbar .hamburger {
-    display: none;
-  }
-
-  .navbar .hamburger:hover {
-    cursor: pointer;
-  }
-  
-  .mobileNav {
-    width: 80px;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: -160px;
-    padding: 16px;
-    transition: transform 0.4s;
-  }
-
-  .mobileNav img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .openDrawer {
-    transform: translateX(-160px);
-  }
-
-  .mobileNav a {
-    text-decoration: none;
-    color: black;
-    margin: 16px 0;
-  }
