@@ -848,7 +848,7 @@ p {
         transform: scale(0);
         height: 50vh;
         width: 50%;
-        z-index: 3;
+        z-index: 4;
         justify-content: space-around;
         margin: 0;
         padding: 0;
